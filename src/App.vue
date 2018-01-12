@@ -11,6 +11,7 @@
       </div>
     </section>
 
+    <confirmation></confirmation>
   
   </div>
 </template>
@@ -53,8 +54,13 @@ export default {
     font-size: 1.1em;
   }
   .font-blur{
-    font-size: 0.8em;
     color: $fontBlur;
+  }
+  .font-sm{
+    font-size: 0.8em;
+  }
+  .text-right{
+    float: right;
   }
   #app {
     font-family: 'Source Sans Pro', sans-serif;
@@ -111,7 +117,7 @@ export default {
     border-radius: 100%;
   }
   .media-img{
-    width: 45px;
+    width: 40px;
     margin-right: 20px;
     border-radius: 100%;
     background-color: #9E9E9E;
@@ -142,6 +148,27 @@ export default {
       background-color: $accentColor;
       color: $fontBlur;
     }
+  }
+
+  //scrollbar
+  ::-webkit-scrollbar {
+      width: 12px;
+  }
+   
+  /* Track */
+  ::-webkit-scrollbar-track {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background:  #eee;
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: transparent; 
   }
   
   

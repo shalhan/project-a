@@ -7,9 +7,22 @@ import router from './router'
 
 //Global Component
 import Spinner from './components/global/Spinner.vue'
+import Confirmation from './components/global/Confirmation.vue'
 Vue.component('spinner', Spinner)
+Vue.component('confirmation', Confirmation)
+
 
 Vue.config.productionTip = false
+
+var EventBus = new Vue();
+
+Object.defineProperties(Vue.prototype, {
+    $bus: {
+        get: function () {
+            return EventBus;
+        }
+    }
+})
 
 /* eslint-disable no-new */
 new Vue({
@@ -18,4 +31,6 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
+
+
 
