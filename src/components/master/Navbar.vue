@@ -27,7 +27,7 @@
 	</nav>
 </template>
 <script>
-import Search from '../../global/Search.vue'
+import Search from '../global/Search.vue'
 export default{
   components: { Search },
   data(){

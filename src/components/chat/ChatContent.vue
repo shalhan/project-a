@@ -8,7 +8,7 @@
 			<li class="chat-list">
 				<div class="bubble-wrapper left">
 					<div class="bubble-img">
-						<img src="../../../assets/logo.png" class="img-round">			
+						<img src="../../assets/logo.png" class="img-round">			
 					</div>
 					<div class="bubble-content">
 						Halo yang disana
@@ -21,7 +21,7 @@
 			<li class="chat-list">
 				<div class="bubble-wrapper">
 					<div class="bubble-img">
-						<img src="../../../assets/logo.png" class="img-round">			
+						<img src="../../assets/logo.png" class="img-round">			
 					</div>
 					<div class="bubble-content">
 						Coba kalau kata2nya panjangya gimana hasilnya kira2 huftt. panjanging lagi hufhuhuf
@@ -54,7 +54,7 @@
 			<li class="chat-list">
 				<div class="bubble-wrapper">
 					<div class="bubble-img">
-						<img src="../../../assets/logo.png" class="img-round">			
+						<img src="../../assets/logo.png" class="img-round">			
 					</div>
 					<div class="bubble-content">
 						Halo yang disana
@@ -83,7 +83,7 @@
 	}
 </script>
 <style lang="scss" scoped>
-  @import '../../../assets/style/scss/variable.scss';
+  @import '../../assets/style/scss/variable.scss';
 
  //chat
   .chat-wrapper{
@@ -91,10 +91,14 @@
     height: $fullHeight; 
     position: relative;
     padding-bottom: 10px;
+
     .chat-content{
     	padding: 55px 10px 0;
     	height: 90%;
-    	overflow-y: auto;    
+    	overflow-y: hidden;  
+    	&:hover{
+    		overflow-y: overlay;    
+    	}  
     	.chat-list{
     		width: 100%;
     	}
@@ -143,7 +147,7 @@
     }
 
     .bubble-content{
-      background-color: $accentColor;
+      background-color: $bubbleContentOp;
       padding: 10px;
       border-radius: 10px;
       font-size: 0.8em;

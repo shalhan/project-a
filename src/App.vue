@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Navbar from './components/master/_part/Navbar.vue'
+import Navbar from './components/master/Navbar.vue'
 
 export default {
   /* eslint-disable */
@@ -33,7 +33,7 @@ export default {
   body {
     background-color: $bgColor;
     letter-spacing: 1.5px;
-    font-size: 87.5%;
+    font-size: 82.5%;
     color: $darkFontColor;
     font-weight: 400;
   }
@@ -56,8 +56,14 @@ export default {
   .font-blur{
     color: $fontBlur;
   }
+  .font-accent{
+    color: $accentColor;
+  }
   .font-sm{
     font-size: 0.8em;
+  }
+  .font-italic{
+    font-style: italic;
   }
   .text-right{
     float: right;
@@ -116,8 +122,15 @@ export default {
     max-width: 100%;
     border-radius: 100%;
   }
+  .media{
+    justify-content: space-between;
+  }
+  .media-meta{
+    display: flex;
+  }
   .media-img{
     width: 40px;
+    max-height: 40px;
     margin-right: 20px;
     border-radius: 100%;
     background-color: #9E9E9E;
@@ -133,7 +146,7 @@ export default {
     margin-right: 10px;
     color: $fontBlur;
     &:focus{
-       border: 1px solid $accentColor;
+       border: 1px solid #4f93ce;
        outline: none;
     }
   }

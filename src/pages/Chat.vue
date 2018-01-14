@@ -7,6 +7,9 @@
       <div class="col-md-6">
         <chat-content :selected_chat="selected_chat"></chat-content>
       </div>
+      <div class="col-md-3">
+        <dictionary></dictionary>
+      </div>
     </div>
 
   </div>
@@ -16,15 +19,18 @@
 </template>
 
 <script>
-import ChatHistories from './_part/ChatHistories.vue'
-import ChatContent from './_part/ChatContent.vue'
+import ChatHistories from '../components/chat/ChatHistories.vue'
+import ChatContent from '../components/chat/ChatContent.vue'
+import Dictionary from '../components/global/Dictionary.vue'
+
 
 
 export default {
   name: 'Chat',
   components: {
     'chat-histories': ChatHistories,
-    'chat-content': ChatContent
+    'chat-content': ChatContent,
+    'dictionary': Dictionary
   },
   data () {
     return {

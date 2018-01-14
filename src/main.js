@@ -8,8 +8,12 @@ import router from './router'
 //Global Component
 import Spinner from './components/global/Spinner.vue'
 import Confirmation from './components/global/Confirmation.vue'
+import Loading from './components/global/Loading.vue'
+
 Vue.component('spinner', Spinner)
 Vue.component('confirmation', Confirmation)
+Vue.component('loading', Loading)
+
 
 
 Vue.config.productionTip = false

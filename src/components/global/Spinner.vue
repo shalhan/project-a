@@ -10,8 +10,8 @@
 
 <style scoped>
 	.bouncing {
-	  width: 25px;
-	  height: 25px;
+	  width: 35px;
+	  height: 35px;
 	  border-radius: 100%;
 	  position: absolute;
 	  left: 50%;

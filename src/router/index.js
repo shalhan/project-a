@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Question from '@/components/question/Question'
-import Profile from '@/components/profile/Profile'
-import Chat from '@/components/chat/Chat'
+import Question from '@/pages/Question'
+import Profile from '@/pages/Profile'
+import Chat from '@/pages/Chat'
 
 
 Vue.use(Router)
